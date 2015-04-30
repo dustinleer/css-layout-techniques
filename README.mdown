@@ -1,0 +1,53 @@
+#CSS Layout Techniques#
+
+This is part of the Web Design track on [teamtreehouse.com](http://teamtreehouse.com/tracks/web-design).
+
+If you want to learn more about this project please sign up at [teamtreehouse.com](http://referrals.trhou.se/dustinleer) with this referral link. This helps me lower my costs so do me a solid if you want to sign up and use the second link please.
+
+
+The web is filled with text and images, but it's also filled with information like sports scores throughout the years, list of employee names and email addresses, or nutrition facts for your favorite foods. HTML tables enable the display information in what is commonly known as tabular data, which is information that's stored in a table-like structure of columns and rows. In general, anything that you might put into a spreadsheet could go in a table. There are many use cases for a table, so it's important to add them to your skills because it's a very common method for displaying information.
+
+* * *
+
+##Lessons##
+
+###Step 1
+
+**Display Modes**  
+Learn how the display property can be used to layout and align elements on the page. We’ll cover the block, inline and inline-block methods, along with a few tips on using the table and table-cell values to create vertically aligned content.
+
+
+* * *
+
+
+###Step 2
+
+**Float Layout**  
+In this stage, we’ll layout the header, navigation, and columns using the float method. We’ll cover how floats work, the common layout “bugs” that occur when building with floats, and how to fix them.
+
+
+* * *
+
+
+###Step 3
+
+**Positioning Schemes**  
+In this stage, we'll learn how the absolute, relative, and fixed positioning schemes can be used to layout our content.
+
+
+* * *
+
+
+###Step 4
+
+**Flexbox Layout**  
+In this stage, we'll learn how to use the new CSS Flexbox feature in our layouts. We'll also use Modernizr, a feature detection tool, to create fallbacks for browsers that do not support Flexbox.
+
+
+* * *
+
+
+###Step 5
+
+**Grid Layout**  
+In this stage, we'll learn how grid layout works, and the components that make up a grid by building a fluid grid system.
