@@ -33,7 +33,6 @@ body {
 	margin: auto;
 }
 .main-header {
-	min-height: 100px;
 	padding: 15px;
 }
 
@@ -79,6 +78,15 @@ body {
 	padding: 20px;
 }
 
+/* Clear Fix
+================================ */
+
+.group::after {
+	content: "";
+	display: table;;
+	clear: both;
+}
+
 /* Media Queries
 ================================ */
 
@@ -88,6 +96,7 @@ body {
 	.main-logo {
 		width: initial;
 		height: initial;
+		float: initial;
 	}
 	.main-logo {
 		margin-right: 0;
