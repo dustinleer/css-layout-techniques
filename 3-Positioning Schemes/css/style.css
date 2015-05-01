@@ -93,16 +93,18 @@ body {
 	.col {
 		height: 100%;
 	}
-	/*.main-wrapper {
-		width: 95%;
-		margin: auto;
-	}*/
+	body {
+		padding-top: 100px;
+	}
 
 	/* Header, Banner and Footer Layout
 	================================ */
 
 	.main-header {
-		position: relative;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 100;
 	}
 	.main-logo,
 	.main-nav {
