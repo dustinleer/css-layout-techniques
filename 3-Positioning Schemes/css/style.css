@@ -28,6 +28,7 @@ body {
 .main-header {
 	padding: 15px;
 	min-height: 100px;
+	overflow: hidden;
 }
 .main-nav li {
 	margin-top: 15px;
@@ -91,6 +92,19 @@ body {
 	/* Header, Banner and Footer Layout
 	================================ */
 
+	.main-logo,
+	.main-nav {
+		position: relative;
+	}
+	.main-logo {
+		width: 150px;
+		top: 20px;
+		left: 20px;
+	}
+	.main-nav {
+		bottom: 32px;
+		left: 200px;
+	}
 	.main-nav li {
 		margin-right: 6px;
 		margin-left: 6px;
