@@ -37,6 +37,21 @@ body {
 	padding: 15px;
 }
 
+.main-logo,
+.main-nav li {
+	float: left;
+}
+
+.main-nav li {
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 15px;
+}
+
+.main-logo {
+	margin: 0 50px 0 0;
+}
+
 .main-logo a, 
 .main-nav a {
 	display: block;
