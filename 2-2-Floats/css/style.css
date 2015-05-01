@@ -28,10 +28,10 @@ body {
 /* Main Layout Styles
 ================================ */
 
-.main-wrapper {
+/*.main-wrapper {
 	width: 90%;
 	margin: auto;
-}
+}*/
 .main-header {
 	padding: 15px;
 }
@@ -76,9 +76,33 @@ body {
 
 .col {
 	padding: 20px;
+	float: left;
+	width: 30%;
 }
 
-/* Clear Fix
+.primary-content {
+	width: 40%;
+}
+
+.col:last-child {
+	float: right;
+}
+
+/* Imagery
+================================ */
+
+.feat-img {
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: 1px solid;
+	padding: 5px;
+}
+
+
+/* Float Clear Fix
 ================================ */
 
 .group::after {
@@ -93,10 +117,15 @@ body {
 @media (max-width: 768px) {
 	.main-wrapper,
 	.main-nav li, 
-	.main-logo {
+	.main-logo,
+	.col,
+	.feat-img {
 		width: initial;
 		height: initial;
 		float: initial;
+	}
+	.feat-img {
+		width: 100%;
 	}
 	.main-logo {
 		margin-right: 0;
