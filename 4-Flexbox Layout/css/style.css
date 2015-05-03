@@ -14,6 +14,7 @@ body {
 
 /* Layout Element Colors
 ================================ */
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot');
@@ -32,6 +33,7 @@ body {
 .main-nav a        { background-color: #3f8abf; }
 .main-logo a       { background-color: #5fcf80; }
 .primary-content   { background-color: #caebf6; }
+.secondary-content { background-color: #bfe3d0; }
 .main-footer       { background-color: #b7c0c7; }
 
 /* Main Layout
@@ -69,10 +71,6 @@ body {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-.extra-content,
-.main-banner {
-	display: none;
-}
 
 /* Imagery
 ================================ */
@@ -94,6 +92,10 @@ body {
 	}
 	.main-nav li:first-child {
 		margin-top: 0;
+	}
+	.extra-content,
+	.main-banner {
+		display: none;
 	}
 }
 
@@ -127,6 +129,7 @@ body {
 		transition: .5s;
 	}
 	.main-nav li:hover:not(.main-logo) {
+		-webkit-flex-grow: 2;
 		flex-grow: 2;
 	}
 	.main-logo:first-child {
@@ -144,14 +147,23 @@ body {
 	/* Column Layout
 	================================ */
 
+	.content-row {
+		display: -webkit-flex;
+		display: flex;
+	}
 	.col {
-		width: 30%;
-		display: inline-block;
-		margin-right: -5px;
-		vertical-align: top;
+		-webkit-flex: 1;
+		flex: 1;
 	}
 	.primary-content {
-		width: 40%;
+		-webkit-flex: 2;
+		flex: 2;
+		-webkit-order: -1;
+		order: -1;
+	}
+	.extra-content {
+		-webkit-order: 1;
+		order: 1;
 	}
 
 	/* Imagery
