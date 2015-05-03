@@ -12,7 +12,7 @@ body {
 	background-color: #edeff0;
 }
 
-/* Layout Element Colors
+/* Icon Fonts
 ================================ */
 
 @font-face {
@@ -59,14 +59,14 @@ body {
 	content: attr(data-icon);
 	color: #fff;
 	position: absolute;
-	top: 10px;
 	left: -30%;
+	top: 10px;
 	transition: .4s;
 }
 .main-nav a:hover::before {
-	left: 28%%;
+	left: 28%;
 }
-	no-flexbox .main-nav a:hover::before {
+	.no-flexbox a:hover::before {
 		left: 18px;
 	}
 .main-footer {
@@ -84,6 +84,15 @@ body {
 	margin-bottom: 10px;
 	border: solid 1px;
 	padding: 5px;
+}
+
+/* Float Clearfix
+================================ */
+
+.group:after {
+	content: " ";
+	display: table;
+	clear: both;
 }
 
 /* Media Queries
@@ -123,15 +132,15 @@ body {
 		height: 100%;
 	}
 	.main-nav li {
+		margin-left: 8px;
+		margin-right: 8px;
 		-webkit-align-self: center;
 		align-self: center;
 		-webkit-flex-grow: 1;
 		flex-grow: 1;
-		margin-left: 8px;
-		margin-right: 8px;
 		transition: .5s;
 	}
-		.no-flex-box .main-nav li {
+		.no-flexbox .main-nav li {
 			display: inline-block;
 			margin-top: 12px;
 			width: 150px;
@@ -168,10 +177,10 @@ body {
 			width: 33.3%;
 		}
 	.primary-content {
-		-webkit-flex: 2;
-		flex: 2;
 		-webkit-order: -1;
 		order: -1;
+		-webkit-flex: 2;
+		flex: 2;
 	}
 	.extra-content {
 		-webkit-order: 1;
