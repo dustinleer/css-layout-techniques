@@ -73,6 +73,27 @@ body {
 	border: solid 1px;
 	padding: 5px;
 }
+.icon {
+	background-color: #39add1;
+	margin-top: 34px;
+	height: 180px;
+	border-radius: 5px;
+	position: relative;
+}
+.icon::after {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 90px;
+	background: url('../img/icon.png') no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
 
 /* Float Clearfix
 ================================ */
